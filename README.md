@@ -6,7 +6,7 @@
 
 <img width="1343" height="601" alt="spotify" src="https://github.com/user-attachments/assets/7dd90505-ab4c-4ff0-b01a-f2073f78349d" />
 
-# 🎵 Spotify Clone - Interface Responsiva
+# 🎵 Spotify Clone - Interface Visual
 
 Este projeto é uma **interface web responsiva inspirada no Spotify**, com uma exibição dinâmica de artistas e álbuns populares. Utiliza HTML, CSS e JavaScript puro para renderização e manipulação dinâmica de dados simulados.
 

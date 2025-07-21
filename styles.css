@@ -1,0 +1,242 @@
+   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar{
+    width: 300px;
+    background-color: #121212;
+    padding: 10px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-logo{
+    font-size: 24px;
+}
+
+.nav-library{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+    padding-right: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.nav-library i, .nav-library p{
+    color: #b7b3b6;
+    font-size: 14px;
+}
+
+.nav-playlist, .nav-podcast{
+    background-color: #242424;
+    padding: 16px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.nav-playlist button, .nav-podcast button{
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 6px 10px;
+    margin-top: 16px;
+    cursor: pointer;
+    font-size: 12px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.nav-playlist p, .nav-podcast p{
+    font-size: 12px;
+}
+
+.nav-footer{
+    margin-top: auto;
+}
+
+.nav-footer a{
+    color: #a7a7a7;
+    text-decoration: none;
+    font-size: 12px;
+    margin-right: 12px;
+    margin-bottom: 8px;
+}
+
+.nav-lang-button{
+    background-color: transparent;
+    border: 1px solid #a7a7a7;
+    color: #fff;
+    padding: 8px 12px;
+    margin-top: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+    width: 175px;
+    height: 35px;
+}
+
+main{
+    padding: 24px;
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.search-bar{
+    display: flex;
+    align-items: center;
+    background-color: #242424;
+    padding: 8px 16px;
+    border-radius: 20px;
+    width: 300px;
+}
+
+.search-bar input{
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    width: 100%;
+    margin-left: 10px;
+    outline: none;
+}
+
+.artists-grid, .albums-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 24px;
+    margin-bottom: 40px;
+}
+
+.artist-card, .album-card{
+    background-color: #181818;
+    padding: 16px;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.artist-card:hover, .album-card:hover{
+    background-color: #282828;
+}
+
+.artist-card img{
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 16px;
+    max-height: 65%;
+}
+
+.album-card img{
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.artist-card h3, album-card h3{
+    font-size: 12px;
+}
+
+.artist-card p, album-card p{
+    font-size: 10px;
+    color: #b7b3b6;
+}
+
+.content{
+    margin-top: 40px;
+}
+
+.content h2{
+    margin-bottom: 10px;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background-color: #101010; /* Cor de fundo para o cabeçalho */
+    
+    /* Linhas para fazer o cabeçalho ficar fixo no topo ao rolar */
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.arrow-btn {
+    background-color: rgba(0,0,0,0.7);
+    border: none;
+    border-radius: 50%;
+    color: #fff;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.arrow-btn:disabled {
+    color: #6a6a6a;
+    cursor: not-allowed;
+}
+
+.search-bar {
+    width: 360px; 
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-link {
+    color: #a7a7a7;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.header-link:hover {
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.signup-link {
+    color: #fff; 
+}
+
+.login-button {
+    background-color: #fff;
+    color: #000;
+    font-weight: bold;
+    font-size: 15px;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.login-button:hover {
+    transform: scale(1.05);
+}
